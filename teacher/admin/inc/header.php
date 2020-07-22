@@ -3,7 +3,7 @@
 <div id="header">
 
 	<div id="logo">
-		<h2><a href="index.php" >E Learning</a></h2>
+		<h2><a href="index.php" >SCOLAR</a></h2>
 	
 	</div>
 	<div id="title">

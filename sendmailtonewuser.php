@@ -22,9 +22,9 @@
 		$mail->Host = "smtp.gmail.com";
 		$mail->Port = 465; // or 587
 		$mail->IsHTML(true);
-		$mail->Username = "michelarnaud100@gmail.com";
-		$mail->Password = "AlphaCommando48..";
-		$mail->SetFrom("michelarnaud100@gmail.com","E-learn");
+		$mail->Username = "diarrassoubasiaka98@gmail.com";
+		$mail->Password = "silleryoung@90";
+		$mail->SetFrom("diarrassoubasiaka98@gmail.com","E-learn");
 		$mail->Subject = "Verification Code E-learn";
 		$mail->Body = "Hi dear Student Your Verification Code is $actkey";
 		$mail->AddAddress("".$_GET['mail']."");

@@ -2,7 +2,7 @@
 <html>
 	<head>
 		<meta charset="utf-8">
-		<title>E Learning | Course</title>
+		<title>SCOLAR | Course</title>
 		<link rel="stylesheet" href="css/style.css" />
 		<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css"/>
 	</head>
@@ -10,7 +10,7 @@
 		<?php
 			include("inc/header.php");
 			include("inc/db.php");
-			$get_cat1=$con->prepare("select * from courses where c_id='".$_GET['c_id']."'");
+			$get_cat1=$con->prepare("select *from courses where c_id='".$_GET['c_id']."'");
 			$get_cat1->setFetchMode(PDO:: FETCH_ASSOC);
 			$get_cat1->execute();
 			

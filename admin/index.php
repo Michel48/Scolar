@@ -1,13 +1,16 @@
-<?php include("../inc/db.php");
-	 session_start();
-if (!isset($_SESSION['user_login']))
-	{
-	echo 'Vous n\'avez pas les droits d\'accès à cette page';
-	echo '<br><a href="..\login1.php">retour vers le site</a>';
-	exit;
-	}
+v <?php
+ include_once(".../db.php");
+session_start();
+if (!isset($_SESSION['id_admin'])){
+
+	header('location:../admin/login.php');
+}
+
+
+
 
 ?>
+
 
 
 

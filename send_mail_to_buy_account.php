@@ -23,9 +23,9 @@
 		$mail->Host = "smtp.gmail.com";
 		$mail->Port = 465; // or 587
 		$mail->IsHTML(true);
-		$mail->Username = "your gmail";
-		$mail->Password = "password";
-		$mail->SetFrom("your gmail","E-Learing");
+		$mail->Username = "Diarrassoubasiaka98@gmail.com";
+		$mail->Password = "silleryoung@90";
+		$mail->SetFrom("Diarrassoubasiaka98@gmail.com","E-Learing");
 		$mail->Subject = "Payment Details E- Learing";
 		$mail->Body = "Hi dear Student the account details of admin name - xxxxx  and Account Number - 123xxxxxxx455 to transfer the amount of Rs. ".$_GET['amount']." copy the transtion id to send admin in E-Learing website";
 		

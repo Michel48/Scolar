@@ -16,7 +16,7 @@ session_start();
 		</div>
 		
 		<div id="slog">
-			<p>No.1 Site ELearning</p>
+			<p>India's No.1 E Learning Website</p>
 		</div>
 	 </div>
 
