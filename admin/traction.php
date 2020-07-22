@@ -1,3 +1,10 @@
+<?php
+if($_SESSION['user']['role'] !='admin'){
+
+header('Location: ../index.php');
+
+}else{
+	?>
 <div id="bodyright">
 
 		<?php	include("inc/db.php");
@@ -284,4 +291,4 @@
 
 
 
-		} ?>
+		} }?>

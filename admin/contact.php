@@ -1,3 +1,10 @@
+<?php
+if($_SESSION['user']['role'] !='admin'){
+
+header('Location: ../index.php');
+
+}else{
+	?>
 <!DOCTYPE html>
 <html>
 <head>
@@ -22,7 +29,6 @@
 	//echo add_cat();
 	
 		include("inc/db.php");
-		session_start();
 		$contact=$con->prepare("select * from contact where con_id='".$_SESSION['user']['con_id']."'");
 		$contact->setFetchMode(PDO:: FETCH_ASSOC);
 		$contact->execute();
@@ -158,3 +164,4 @@
 				</div>
 		
 </div>
+	<?php }?>

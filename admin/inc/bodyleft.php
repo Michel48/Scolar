@@ -1,3 +1,10 @@
+<?php
+if($_SESSION['user']['role'] !='admin'){
+
+header('Location: ../index.php');
+
+}else{
+	?>
 <div id="bodyleft">
 	
 	<h3>Categories Management</h3>
@@ -64,4 +71,4 @@
 		include("traction.php");
 	}
 
-?>
+}?>

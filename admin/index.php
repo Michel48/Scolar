@@ -1,11 +1,11 @@
-<?php include("../inc/db.php");
-	 session_start();
-if (!isset($_SESSION['user_login']))
-	{
-	echo 'Vous n\'avez pas les droits d\'accès à cette page';
-	echo '<br><a href="..\login1.php">retour vers le site</a>';
-	exit;
-	}
+<?php include("inc/db.php");
+	session_start();
+	 if($_SESSION['user']['role'] !='admin'){
+
+		header('Location: ../index.php');
+
+	 }else{
+	
 
 ?>
 
@@ -26,6 +26,6 @@ if (!isset($_SESSION['user_login']))
 			include("inc/bodyleft.php");
 			include("inc/bodyright.php");
 		
-		?>
+	 }?>
 	</body>
 </html>
