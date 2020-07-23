@@ -1,18 +1,12 @@
-v <?php
- include_once(".../db.php");
+<?php
+ include_once("inc/db.php");
 session_start();
-if (!isset($_SESSION['id_admin'])){
+if($_SESSION['user']['role'] != 'admin'){
 
-	header('location:../admin/login.php');
-}
-
-
-
+	header('location:../index.php');
+}else{
 
 ?>
-
-
-
 
 <!doctype html>
 <html>
@@ -29,6 +23,6 @@ if (!isset($_SESSION['id_admin'])){
 			include("inc/bodyleft.php");
 			include("inc/bodyright.php");
 		
-		?>
+}?>
 	</body>
 </html>

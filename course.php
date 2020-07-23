@@ -99,10 +99,17 @@
 					
 					</tr>
 					</table>
+
+					<?php	
+
+						$gettotalprice=0;
+						$gettotalprice=$gettotalprice+$current_price;
+					
+					?>
 					
 					<h1 style="margin-top:-5%;"></h1>
 					<h2>Price : Rs. <?php echo $current_price;?> <del>RS. <?php echo"".$row1['c_price']."";?></del><b><?php echo"".$row1['c_offer']."";?>%</b> Saving Rs. <?php echo $new_width;?></h2>
-					<h3><a href="addtocart.php?course_id=<?php echo"".$_GET['c_id']."";?>"><i class="fas fa-cart-plus"></i> ADD TO CART</a><a href="#"><i class="fas fa-dollar-sign"></i> BUY NOW</a></h3>
+					<h3><a href="addtocart.php?course_id=<?php echo"".$_GET['c_id']."";?>"><i class="fas fa-cart-plus"></i> ADD TO CART</a><a href="buy_page.php?amount=<?php echo"$gettotalprice";?>"><i class="fas fa-dollar-sign"></i> BUY NOW</a></h3>
 				</div>
 				<h3><a href="#" target="_blank" style="background:#3B5998;"><i class="fab fa-facebook-f"></i> Share</a><a href="#" target="_blank" style="background:#DD4B39;"><i class="fab fa-google-plus-g"></i>  Share</a><a href="#" target="_blank" style="background:#4099ff;"><i class="fab fa-twitter"></i> Tweet</a><a href="#" target="_blank" style="background:#25D366;"><i class="fab fa-whatsapp"></i> Share</a></h3>
 				

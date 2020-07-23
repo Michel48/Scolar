@@ -1,3 +1,12 @@
+<?php
+ include_once("inc/db.php");
+session_start();
+if ($_SESSION['user']['role'] != 'admin'){
+
+	header('location:../index.php');
+}else{
+
+?>
 <!doctype html>
 <html>
 	<head>
@@ -124,6 +133,6 @@
 			
 			<?php
 			include("inc/footer.php");
-		?>
+										}?>
 	</body>
 </html>
